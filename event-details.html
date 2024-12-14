@@ -24,11 +24,10 @@
           <button type="button" class="btn-close home-link p-0 text-white" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form class="comment-form" method="post" action="#">
+          <form id="basic-info-form" class="comment-form" method="POST">
             <div class="row">
               <div class="col-12">
-                <div class="alert alert-success contact__msg d-none" role="alert">
-                  Your comment was sent successfully.
+                <div id="alert-message" class="alert contact__msg d-none" role="alert">
                 </div>
               </div>
             </div>
@@ -41,7 +40,9 @@
                 <label for="email-address" class="form-label text-white">Email Address</label>
                 <input name="email-address" id="email-address" type="email-address" class="form-control text-white" placeholder="Enter Your Email">
               </div>
-              <div class="col-12 mt-4"><input name="submit" type="submit" class="btn btn-generic" value="Next"></div>
+              <div class="col-12 d-flex align-items-center justify-content-end">
+              <div class="mt-4"><input name="submit" type="submit" class="btn btn-generic" value="Next"></div>
+            </div>
             </div>
             <!-- end form element -->
           </form>
@@ -123,7 +124,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
-  <script src="assets/js/home.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="assets/js/event-details.js"></script>
 </body>
 
 </html>
